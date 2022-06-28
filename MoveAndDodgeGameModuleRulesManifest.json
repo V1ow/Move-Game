@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Move Game\\Source\\MoveAndDodgeGame\\MoveAndDodgeGame.Build.cs",
+		"D:\\Move Game\\Source\\MoveAndDodgeGame.Target.cs",
+		"D:\\Move Game\\Source\\MoveAndDodgeGameEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

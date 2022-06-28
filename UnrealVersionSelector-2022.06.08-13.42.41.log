@@ -1,0 +1,39 @@
+AndroidPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.AndroidPlatformSDK has no valid SDK
+IOSPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.IOSPlatformSDK has no valid SDK
+LinuxPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.LinuxPlatformSDK has no valid SDK
+WindowsPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.WindowsPlatformSDK using manually installed SDK
+ProjectFileGenerator.GenerateProjectFiles: Discovering modules, targets and source code for project...
+UnrealBuildTool.Main: ERROR: Error while enumerating Visual Studio toolchains
+UnrealBuildTool.Main: COMException: Не удалось получить фабрику класса COM для компонента с CLSID {177F0C4A-1CD3-4DE7-A32C-71DBBB9FA36D} из-за следующей ошибки: 80040154 Класс не зарегистрирован (Исключение из HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+UnrealBuildTool.Main:    в System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+UnrealBuildTool.Main:    в System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+UnrealBuildTool.Main:    в System.Activator.CreateInstance(Type type, Boolean nonPublic)
+UnrealBuildTool.Main:    в System.Activator.CreateInstance(Type type)
+UnrealBuildTool.Main:    в UnrealBuildTool.WindowsPlatform.FindVisualStudioInstallations() в D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Platform\Windows\UEBuildWindows.cs:строка 1060Wrapped by BuildException: Error while enumerating Visual Studio toolchains
+UnrealBuildTool.Main:    в UnrealBuildTool.WindowsPlatform.FindVisualStudioInstallations() в D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Platform\Windows\UEBuildWindows.cs:строка 1122
+UnrealBuildTool.Main:    в System.Lazy`1.CreateValue()
+UnrealBuildTool.Main:    в System.Lazy`1.LazyInitValue()
+UnrealBuildTool.Main:    в UnrealBuildTool.VCProjectFileGenerator.SetupSupportedPlatformsAndConfigurations(Boolean IncludeAllPlatforms, String& SupportedPlatformNames) в D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\VisualStudio\VCProjectFileGenerator.cs:строка 337
+UnrealBuildTool.Main:    в UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments) в D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:строка 743
+UnrealBuildTool.Main:    в UnrealBuildTool.GenerateProjectFilesMode.Execute(CommandLineArguments Arguments) в D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:строка 208
+UnrealBuildTool.Main:    в UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) в D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:строка 557
+Timeline.Print: Timeline:
+Timeline.Print: 
+Timeline.Print: [ 0.000]
+Timeline.Print: [ 0.000](+0.094) <unknown>
+Timeline.Print: [ 0.094](+0.387) XmlConfig.ReadConfigFiles()
+Timeline.Print: [ 0.482](+0.000) SingleInstanceMutex.Acquire()
+Timeline.Print: [ 0.483](+0.169) UEBuildPlatform.RegisterPlatforms()
+Timeline.Print:   0.487          [ 0.003](+0.093) Initializing InstalledPlatformInfo
+Timeline.Print:   0.580          [ 0.097](+0.000) Querying types
+Timeline.Print:   0.583          [ 0.100](+0.002) MacPlatformFactory
+Timeline.Print:   0.586          [ 0.103](+0.000) TVOSPlatformFactory
+Timeline.Print:   0.586          [ 0.103](+0.031) AndroidPlatformFactory
+Timeline.Print:   0.617          [ 0.134](+0.000) HoloLensPlatformFactory
+Timeline.Print:   0.618          [ 0.135](+0.007) IOSPlatformFactory
+Timeline.Print:   0.625          [ 0.142](+0.022) LinuxPlatformFactory
+Timeline.Print:   0.647          [ 0.164](+0.000) LuminPlatformFactory
+Timeline.Print:   0.648          [ 0.165](+0.004) WindowsPlatformFactory
+Timeline.Print: [ 0.653](+0.542) <unknown>
+Timeline.Print: [ 1.195](+0.006) FileMetadataPrefetch.Stop()
+Timeline.Print: [ 1.214]
